@@ -1,0 +1,160 @@
+body {
+	background: url("../images/background.jpeg") repeat-x fixed top #31403e;
+	line-height: 1.5;
+    color: #FFF;
+    font-family: Century Gothic , sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #dedede;
+}
+
+.header {
+	height: 70px;
+	width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.header-logo {
+	text-align: center;
+	width: 50%;
+}
+
+.header-contact {
+	text-align: right;
+	font-family: Arial;
+	font-weight: bold;
+	width: 50%;
+}
+
+.header-contact-phone {
+	font-size: 24px;
+}
+
+.header-contact-address {
+	font-size: 16px;
+}
+
+.nav {
+	height: 30px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.nav td {
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+	padding: 7px;
+    white-space: nowrap;
+	border-top: solid 3px #FFF;
+}
+
+.nav a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.nav-link-selected {
+	width: 150px;
+	border-top: solid 3px #003e7b !important;
+	color: #fe0000;
+}
+
+.nav-link {
+	width: 150px;
+	border-top: solid 3px #FFF;
+    cursor: pointer;
+}
+
+.nav-link-hover {
+	border-top: solid 3px #003e7b !important;
+}
+
+.tag-line {
+	margin: 50px;
+}
+
+.content {    
+	background-color: rgb(44, 58, 61, 91%);
+    width: 950px;
+    margin: 20px auto 60px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.content td {
+    text-align: left;
+	padding: 10px;
+	vertical-align: top;
+}
+
+.content h1 {
+	line-height: 1.5;
+    color: #FF3D3D;
+    font-size: 14pt;
+    font-family: Century Gothic , sans-serif;
+    margin: 0;
+}
+
+.content h2 {
+    line-height: 1.5;
+    color: #FF3D3D;
+    font-size: 12pt;
+    font-family: Century Gothic , sans-serif;
+    margin: 0;
+}
+
+.content hr {
+    margin: 20px 0;
+}
+
+.content a {
+    color: #FF3D3D;
+}
+
+.about-us-contacts {
+	width: 100%;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+	width: 440px;
+	margin-bottom: 10px;
+}
+
+.contact-form input[type="text"] {
+	height: 25px;
+}
+
+.about-us-contacts td {
+	width: 300px;
+}
+
+.footer {
+	background-color: #222222;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-nav {
+    font-size: 13px;
+    font-family: Arial;
+}
+
+.footer-social {
+	margin: 15px auto;
+    font-size: 10px;
+    font-family: Arial;
+}
+
+.footer-copyright {
+    font-size: 11px;
+    font-family: Arial;
+}
+
+.footer a {
+    color: #FFF;
+}

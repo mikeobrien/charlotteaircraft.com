@@ -1,0 +1,87 @@
+---
+layout: site
+---
+
+<h1>Request More Information</h1>
+
+<p>Are you interested in learning more about what we have to offer you? We are more than happy to provide additional information about our aircraft parts. For product pricing details, ordering information, or any other questions you have, contact us through the form below.</p>
+
+<p>Please be sure to include your name, email, phone, and the specific product in question. You will receive a confirmation after submitting the form, and we will respond as quickly as possible for your satisfaction.</p>
+
+<table>
+	<tr>
+		<td style="width:450px">
+			<h2>Additional Information</h2>
+
+			<hr/>
+
+			<p>We look forward to hearing from you. Contact us by phone, email, or the form today!</p>
+
+			<p>
+				<b>Hours of Operation:</b><br/>
+				Monday - Friday: 8:00 a.m. - 5:30 p.m. Eastern USA time zone (GMT-5)
+			</p>
+
+			<p>
+				<b>Service Area:</b><br/>
+				Offering Nationwide and Worldwide Services, Headquarters in Maxton, North Carolina
+			</p> 
+
+			<p>
+				<b>Maxton Phone:</b> 910-844-5775<br/>
+				<b>Email:</b> <a href="email:sales@charlotteaircraft.com">sales@charlotteaircraft.com</a>
+			</p>
+		</td>
+		<td style="width:450px">
+
+			<h2>Contact Form</h2>
+
+			<hr/>
+
+			<form class="contact-form" name="contact-form" id="contact-form">
+				<label for="Name">Name</label><br/>
+				<input id="Name" type="text" name="Name" value="" maxlength=""><br/>
+
+				<label for="Email">Email</label><br/>
+				<input id="Email" type="text" name="Email" value="" maxlength=""><br/>
+				
+				<label for="PhoneNumber">Phone Number</label><br/>
+				<input id="PhoneNumber" type="text" name="PhoneNumber" value="" maxlength=""><br/>
+				
+				<label for="ServiceProduct">Service/Product</label><br/>
+				<input id="ServiceProduct" type="text" name="ServiceProduct" value="" maxlength=""><br/>
+				
+				<label for="Comments">Comments</label><br/>
+				<textarea id="Comments" name="Comments" rows="8"></textarea><br/>
+
+				<input type="submit" name="Submit" value="Submit">
+			</form>
+
+			<script type="text/javascript">
+				$(function() {
+				    $("#contact-form").submit(function(e){
+				        e.preventDefault();
+				        $.ajax({
+					        type: "POST",
+					        url: "https://getform.io/f/f923cd4f-12be-4ca8-9437-a1559dff8770",
+					        crossDomain: true,
+					        data: new FormData(this),
+					        dataType: "json",
+					        processData: false,
+					        contentType: false,
+					        headers: {
+						        "Accept": "application/json"
+					        }
+					    }).done(function() {
+						  $('#contact-form *').fadeOut(2000);
+						  $('#contact-form').prepend('Your submission has been processed...');
+					    }).fail(function() {
+						  $('#contact-form *').fadeOut(2000);
+						  $('#contact-form').prepend('An error occurred! Please try again later.');
+					    });
+				    });
+				});
+			</script>	
+		</td>
+	</tr>
+</table>
